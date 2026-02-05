@@ -1,0 +1,127 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Noto+Serif:wght@400;700&display=swap');
+
+:root {
+  --brown: #8B4513;
+  --gold: #DAA520;
+  --beige: #F5F5DC;
+  --dark: #3b2a1a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--beige);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* Header & Nav */
+header {
+  background: linear-gradient(135deg, var(--brown), var(--gold));
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--beige);
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,.1);
+  transition: transform .4s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.img {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* City of the Day */
+.city {
+  max-width: 600px;
+  margin: 3rem auto;
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  transition: background .4s;
+}
+
+.city:hover {
+  background: var(--dark);
+  color: white;
+}
+
+/* Form */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: .75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 6px rgba(218,165,32,.6);
+}
+
+button {
+  background: var(--brown);
+  color: white;
+  padding: .75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+button:hover {
+  background: var(--gold);
+}
+
+/* Footer */
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
